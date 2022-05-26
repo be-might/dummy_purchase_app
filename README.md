@@ -1,4 +1,4 @@
-# udemy_course_2_ch
+# dummy_purchase_app
 
 A new Flutter project.
 
