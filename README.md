@@ -12,7 +12,8 @@ Adding transaction modal:
 
 Transactioins list:
 
-![image](https://user-images.githubusercontent.com/29125458/172044221-ecba8b92-4dbb-4b54-9ebe-9813d2b0a1c8.png)
+![image](https://user-images.githubusercontent.com/29125458/172044443-c671c0d7-58a3-4832-894e-0912db154abd.png)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
