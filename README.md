@@ -3,12 +3,15 @@
 An app for calculating spendings 
 
 Empty state:
+
 ![image](https://user-images.githubusercontent.com/29125458/172044309-7c8ce3c5-6846-4bda-b7dd-9e7f51e9a093.png)
 
-Adding transaction modal
+Adding transaction modal:
+
 ![image](https://user-images.githubusercontent.com/29125458/172044289-c567a0c5-1703-4c6d-b296-7704c3c1dd70.png)
 
-Transactioins list
+Transactioins list:
+
 ![image](https://user-images.githubusercontent.com/29125458/172044221-ecba8b92-4dbb-4b54-9ebe-9813d2b0a1c8.png)
 ## Getting Started
 
