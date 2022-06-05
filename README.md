@@ -1,7 +1,15 @@
 # dummy_purchase_app
 
-A new Flutter project.
+An app for calculating spendings 
 
+Empty state:
+image.png
+
+Adding transaction modal
+image.png
+
+Transactioins list
+image.png
 ## Getting Started
 
 This project is a starting point for a Flutter application.
