@@ -6,7 +6,8 @@ class NewTransaction extends StatefulWidget {
   // const NewTransaction({Key? key}) : super(key: key);
   final Function _addTransaction;
 
-  NewTransaction(this._addTransaction);
+  // ignore: use_key_in_widget_constructors
+  const NewTransaction(this._addTransaction);
 
   @override
   State<NewTransaction> createState() => _NewTransactionState();
@@ -60,19 +61,19 @@ class _NewTransactionState extends State<NewTransaction> {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               TextField(
-                decoration: InputDecoration(labelText: 'Title'),
+                decoration: const InputDecoration(labelText: 'Title'),
                 controller: _titleConroller,
                 onSubmitted: (_) => _submitData(),
                 // onChanged: (value) => titleInput = value,
               ),
               TextField(
-                decoration: InputDecoration(labelText: 'Amount'),
+                decoration: const InputDecoration(labelText: 'Amount'),
                 controller: _amountConroller,
                 keyboardType: TextInputType.number,
                 onSubmitted: (_) => _submitData(),
                 // onChanged: (value) => amountInput = value,
               ),
-              Container(
+              SizedBox(
                 height: 70,
                 child: Row(
                   children: [
@@ -93,7 +94,7 @@ class _NewTransactionState extends State<NewTransaction> {
                   textStyle: MaterialStateProperty.all<TextStyle>(
                       Theme.of(context).textTheme.button),
                 ),
-                child: Text(
+                child: const Text(
                   'Add transaction',
                   // style: TextStyle(color: Colors.white),
                 ),

@@ -6,7 +6,8 @@ import 'package:udemy_course_2_ch/widgets/chart_bar.dart';
 class Chart extends StatelessWidget {
   final List<Transaction> recentTransaction;
 
-  Chart(this.recentTransaction);
+  // ignore: use_key_in_widget_constructors
+  const Chart(this.recentTransaction);
 
   List<Map<String, Object>> get groupedTransactionValues {
     return List.generate(7, (index) {
@@ -36,9 +37,9 @@ class Chart extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 6,
-      margin: EdgeInsets.all(20),
+      margin: const EdgeInsets.all(20),
       child: Padding(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: groupedTransactionValues

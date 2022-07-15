@@ -7,7 +7,8 @@ class AdaptiveTextButton extends StatelessWidget {
   final String text;
   final Function handler;
 
-  AdaptiveTextButton(this.text, this.handler);
+  // ignore: use_key_in_widget_constructors
+  const AdaptiveTextButton(this.text, this.handler);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,7 @@ class AdaptiveTextButton extends StatelessWidget {
         ? CupertinoButton(
             child: Text(
               text,
-              style: TextStyle(
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -27,7 +28,7 @@ class AdaptiveTextButton extends StatelessWidget {
                     Theme.of(context).primaryColor)),
             child: Text(
               text,
-              style: TextStyle(
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
               ),
             ),
