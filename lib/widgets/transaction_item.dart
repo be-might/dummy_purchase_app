@@ -5,12 +5,12 @@ import 'package:udemy_course_2_ch/model/transaction.dart';
 class TransactionItem extends StatelessWidget {
   const TransactionItem({
     Key key,
-    @required Transaction userTransaction,
-    @required Function deleteTransaction,
-  }) : _userTransaction = userTransaction, _deleteTransaction = deleteTransaction, super(key: key);
+    @required this.userTransaction,
+    @required this.deleteTransaction,
+  }) : super(key: key);
 
-  final Transaction _userTransaction;
-  final Function _deleteTransaction;
+  final Transaction userTransaction;
+  final Function deleteTransaction;
 
   @override
   Widget build(BuildContext context) {
@@ -23,17 +23,17 @@ class TransactionItem extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(6.0),
             child: FittedBox(
-                child: Text('\$${_userTransaction.amount}')),
+                child: Text('\$${userTransaction.amount}')),
           ),
         ),
-        title: Text(_userTransaction.title,
+        title: Text(userTransaction.title,
             style: Theme.of(context).textTheme.headline6),
         subtitle: Text(
-            DateFormat.yMMMd().format(_userTransaction.date)),
+            DateFormat.yMMMd().format(userTransaction.date)),
         trailing: MediaQuery.of(context).size.width > 360
             ? TextButton.icon(
                 onPressed: () =>
-                    _deleteTransaction(_userTransaction.id),
+                    deleteTransaction(userTransaction.id),
                 icon: const Icon(Icons.delete),
                 label: const Text('Delete'),
                 style: ButtonStyle(
@@ -41,8 +41,8 @@ class TransactionItem extends StatelessWidget {
                         Theme.of(context).errorColor)),
               )
             : IconButton(
-                onPressed: () => _deleteTransaction(
-                      _userTransaction.id),
+                onPressed: () => deleteTransaction(
+                      userTransaction.id),
                 color: Theme.of(context).errorColor,
                 icon: const Icon(Icons.delete),
               ),
